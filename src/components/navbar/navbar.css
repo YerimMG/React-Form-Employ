@@ -1,0 +1,46 @@
+.nav-button {
+  margin-left: 10px;
+  border: 1px gray dotted;
+  border-radius: 5px;
+  margin: 0.5rem;
+  align-self: center;
+  padding: 0.5rem;
+  opacity: 0.4;
+  transition: all 0.4s;
+}
+.active {
+  opacity: 0.9;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-right: 1px dotted gray;
+  padding-right: 1rem;
+}
+
+.title span {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: lightblue;
+}
+
+@media (max-width: 574px) {
+  .nav-button {
+    align-self: flex-start;
+    height: 90%;
+    width: 90%;
+    border-radius: 0;
+    border: 0;
+  }
+  .nav-button:first-child {
+    border-bottom: 1px gray dotted;
+  }
+
+  .title {
+    border: 0px gray dotted;
+    padding: 1rem;
+  }
+}
