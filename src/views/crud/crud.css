@@ -1,0 +1,47 @@
+.crud-container {
+  margin: 0 0.2rem;
+  /* background: red; */
+}
+
+.crud-container h1,
+.crud-container h2 {
+  font-weight: bold;
+}
+.forms {
+  /* background: blue; */
+  display: grid;
+  grid-template-areas:
+    'info  adrees'
+    'input input';
+}
+input[type='submit'] {
+  grid-area: input;
+  font-weight: bold;
+  width: 40%;
+  justify-self: center;
+  margin: 1rem;
+}
+.user-info {
+  grid-area: info;
+  /* background: pink; */
+}
+.user-adrees {
+  grid-area: adrees;
+  /* background: orange; */
+}
+
+@media (max-width: 574px) {
+  .forms {
+    display: grid;
+    grid-template-areas:
+      'info'
+      'adrees'
+      'input';
+  }
+  .crud-container h1 {
+    font-size: 1.9rem;
+  }
+  .crud-container h2 {
+    font-size: 1.7rem;
+  }
+}
